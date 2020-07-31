@@ -3,7 +3,7 @@ def find_item_by_name_in_collection(name, collection)
     if item == name
       return item_stats
     end
-    if item !== name
+    if item != name
       return nil
     end
   end
