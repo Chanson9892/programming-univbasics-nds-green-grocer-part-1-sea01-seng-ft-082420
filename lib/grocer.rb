@@ -5,7 +5,7 @@ def find_item_by_name_in_collection(name, collection)
       binding.pry
       return item
     end
-    if item[:item] != name
+    else
       return nil
     end
   end
