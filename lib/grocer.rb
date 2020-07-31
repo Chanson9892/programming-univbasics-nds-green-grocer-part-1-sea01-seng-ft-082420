@@ -1,9 +1,9 @@
 def find_item_by_name_in_collection(name, collection)
-  collection.each do |item, item_stats|
-    if item == name
-      return item_stats
+  collection.each do |item|
+    if collection[:item] == name
+      return item
     end
-    if item != name
+    if collection[:item] != name
       return nil
     end
   end
