@@ -1,7 +1,12 @@
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
+  collection.each do |item, item_stats|
+    if item == name
+      return item_stats
+    end
+    if item !== name
+      return nil
+    end
+  end
 
 end
 
