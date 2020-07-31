@@ -1,14 +1,12 @@
-require 'pry'
 def find_item_by_name_in_collection(name, collection)
+  index = 0
   collection.each do |item|
     if item[:item] == name
-      binding.pry
       return item
-    else
-      return nil
     end
+    index += 1
   end
-
+  nil
 end
 
 def consolidate_cart(cart)
