@@ -9,7 +9,7 @@ def find_item_by_name_in_collection(name, collection)
     end
     binding.pry
   end
-    
+
 end
 
 def consolidate_cart(cart)
