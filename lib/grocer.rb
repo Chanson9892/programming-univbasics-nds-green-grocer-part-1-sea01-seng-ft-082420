@@ -10,9 +10,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  index = 0
   new_cart = []
-
   cart.each do |grocery_item|
     current_item = find_item_by_name_in_collection(grocery_item[:item], new_cart)
     if current_item
@@ -25,7 +23,6 @@ def consolidate_cart(cart)
       grocery_item[:count] = 1
       new_cart << grocery_item
     end
-    index += 1
   end
   new_cart
 end
